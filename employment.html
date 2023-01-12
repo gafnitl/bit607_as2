@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact|Haukai</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/map.css">
+<link rel="stylesheet" href="css/icon.css">
+</head>
+
+<body>
+<!--header-->
+<!--ARIA Landmark role applied to the 'header' element, as there is no HTML5 element equavalent-->
+<header role="banner">
+    <div class="w3-row-padding w3-white w3-padding-16"></div>
+      <div class="w3-container w3-threequarter">
+        <img src="images/logo.JPG" alt="logo" style="width:100%;max-width:180px">
+      </div>
+      <div class="w3-container w3-quarter">
+        <h1>The Haukai Restaurant</h1>
+      </div>
+    </div>
+</header>
+
+<!--Navigation bar and buttons-->
+<!--ARIA Landmark role applied to the 'navigation' element, as HTML element 'nav' is not supported by Assistive Technology (AT) at the moment-->
+<nav role='navigation' class="w3-bar w3-blue-gray" >
+    <a href='index.html' class="w3-bar-item w3-button w3-large w3-hide-small" style="width:16.5%">Home</a>
+    <a href='reservation.html' class="w3-bar-item w3-button w3-large w3-hide-small" style="width:16.5%">Reservation</a>
+    <a href='menu.html' class="w3-bar-item w3-button w3-large w3-hide-small" style="width:16.4%">Menu</a>
+    <a href='employment.html' class="w3-bar-item w3-button w3-large w3-hide-small" style="width:16.5%">Employment</a>
+    <a href='hours.html' class="w3-bar-item w3-button w3-large w3-hide-small" style="width:16.5%">Open hours</a>
+    <a href='contact.html' class="w3-bar-item w3-button w3-large w3-hide-small" style="width:16.5%">Contact us</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    <div id="demo" class="w3-bar-block w3-blue-gray w3-hide w3-hide-large w3-hide-medium">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="reservation.html" class="w3-bar-item w3-button">Reservation</a>
+        <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+        <a href="employment.html" class="w3-bar-item w3-button">Employment</a>
+        <a href="hours.html" class="w3-bar-item w3-button">Open hours</a>
+        <a href="contact.html" class="w3-bar-item w3-button">Contact us</a>
+    </div>
+</nav>
+
+<!--Page main content-->
+<!--ARIA Landmark role applied to the 'main'element to help direct AT to central topic/main content within the 'body' element-->
+<main role="main" class="w3-light-grey">
+  <div class="w3-row-padding" style="margin-bottom:32px; margin-top:32px" >
+    <!--Contact us-->
+    <div class="content" style="padding:0px 16px">
+      <h2>Employment</h2>
+      <p>Coming soon ... </p>
+
+    </div>
+  </div>
+</main>
+
+<!--Footer-->
+<!--Footer-->
+<footer>
+    <div class="w3-row-padding w3-dark-grey" style="margin-bottom:32px;">
+      <div class="w3-third">
+        <h3>Operation</h3>
+        <p>Open from Wednesday to Sunday inclusive - for Dinner's only</p>
+      </div>
+      <div class="w3-third">
+        <h3>Fins us on</h3>
+        <p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a></p>
+      </div>  
+      <div class="w3-third">
+        <h3>Go to</h3>
+        <div class="w3-container">
+          <div class="w3-bar-block">
+            <a href="index.html" class="w3-bar-item w3-button"><i>Home</i></a>
+            <a href="reservation.html" class="w3-bar-item w3-button"><i>Reservation</i></a>
+            <a href="menu.html" class="w3-bar-item w3-button"><i>Menu</i></a>
+            <a href="employment.html" class="w3-bar-item w3-button"><i>Emplyment</i></a>
+            <a href="hours.html" class="w3-bar-item w3-button"><i>Open Hours</i></a>
+            <a href="contact.html" class="w3-bar-item w3-button"><i>Contact us</i></a>
+          </div>
+        </div>
+      </div>  
+    </div>
+</footer>
+
+<!--Javascript for reponsive navigation bar (hamburger menu) on mobile devices-->
+<script>
+  function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+</body>
+</html>
